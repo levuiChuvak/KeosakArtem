@@ -1,0 +1,6 @@
+a = [451, 196, 113, 593, 343, 314, 486, 79, 980, 648, 850, 900, 500, 46, 781]
+for i in range(len(a) - 1):
+    for j in range(len(a) - i - 1):
+        if a[j] < a[j + 1]:
+            a[j], a[j + 1] = a[j + 1], a[j]
+print(a)
